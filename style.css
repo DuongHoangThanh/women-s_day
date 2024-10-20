@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffe6e6; /* Màu nền nhẹ nhàng */
+  }
+  
+  #fireworks, #petals {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0; /* Pháo hoa và hoa rơi phía sau */
+  }
+  
+  .container {
+    text-align: center;
+    z-index: 1;
+    position: relative;
+  }
+  
+  .message {
+    font-size: 3em;
+    font-weight: bold;
+    color: #ff007f;
+    white-space: normal; /* Để text không bị xuống dòng */
+  }
+  
+  .rose-image {
+    width: 200px;
+    margin-top: 20px;
+    animation: roseAnimation 4s ease-in-out infinite;
+  }
+  
+  @keyframes roseAnimation {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+  }
+
+  .message {
+    font-size: 3em;
+    color: #ff007f;
+    white-space: normal;
+    overflow: hidden;
+    border-right: .15em solid #ff007f; /* Con trỏ gõ chữ */
+    animation: blink-caret 0.85s step-end infinite; /* Hiệu ứng nhấp nháy của con trỏ */
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: #ff007f; }
+  }
+  
+  
