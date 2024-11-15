@@ -104,7 +104,7 @@ window.addEventListener('resize', () => {
     canvasPetals.height = window.innerHeight;
 });
 
-const message = "Chúc NGỌC TIỀN 20/10 vui vẻ!";
+const message = "Chúc Insert Name... 20/10 vui vẻ!";
 const animatedMessage = document.getElementById("animatedMessage");
 let index = 0;
 let isDeleting = false;
